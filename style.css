@@ -68,7 +68,7 @@
     transition: all 1s;
 }
 .ex-7-img:hover{
-    filter: contrast(2);
+    filter:contrast(2);
     filter:saturate(2);
     filter:invert(10);
 }
@@ -76,16 +76,32 @@
     transition: all 2s;
 }
 .ex-8-img:hover{
-    filter: contrast(1.2) saturate(1.8) drop-shadow(0 0 2rem indigo);
+    filter:contrast(1.2) saturate(1.8) drop-shadow(0 0 2rem indigo);
     border-radius: 4rem;
 }
 
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: all 2s;
 }
+.ex-9-img:hover{
+    filter:brightness(120%) drop-shadow(0 0 1rem black);
+    border-radius: 4rem;
+    transform: scale(1.25);
+}
+
 .ex-10-icon {
     font-size: 60px;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(-360deg);
+    }
 }
 .ex-11-icon {
     font-size: 60px;
