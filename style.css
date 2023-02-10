@@ -154,5 +154,43 @@
     width: 60px;
     height: 20px;
 }
-
-
+.ex-12-button:hover .ex-12-top-white{
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-name: movetop;
+    animation-iteration-count: infinite;
+}
+@keyframes movetop{
+    0%{
+        left: 20%;
+    }
+    25%{
+        left:10%;
+    }
+    50%{
+        left: 60%;
+    }
+    100%{
+        left: 20%;
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-name: movebottom;
+    animation-iteration-count: infinite;
+}
+@keyframes movebottom{
+    0%{
+        right: 20%;
+    }
+    25%{
+        right:10%;
+    }
+    50%{
+        right: 60%;
+    }
+    100%{
+        right: 20%;
+    }
+}
