@@ -76,9 +76,7 @@
     transition: all 2s;
 }
 .ex-8-img:hover{
-    filter: drop-shadow(0 0 2rem indigo);
-    filter:contrast(1.2)
-    filter: saturate(2);
+    filter: contrast(1.2) saturate(1.8) drop-shadow(0 0 2rem indigo);
     border-radius: 4rem;
 }
 
