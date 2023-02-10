@@ -13,20 +13,33 @@
     height: 100px;
     background: red;
     transition-duration: 2s;
-    
+    transition-timing-function: cubic-bezier(0.72, 0.1, 0.78, 0.94);
 }
-.ex-2-square:active{
+.ex-2-square:active {
     width: 100%;
 }
 .ex-3-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0, 0.5, 0.94, 0.88);
+
 }
+.ex-3-square:hover {
+    border-radius: 100%;
+}
+
 .ex-4-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: all;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.42, 0.39, 0.59, 0.89);
+}
+.ex-4-square:hover{
+    background: none;
 }
 .ex-5-square {
     margin: 20px;
